@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Philipp Küng <github@philippkueng.ch>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "superagent": "^0.21.0"
+  }
 }
