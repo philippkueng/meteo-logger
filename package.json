@@ -9,6 +9,7 @@
   "author": "Philipp Küng <github@philippkueng.ch>",
   "license": "MIT",
   "dependencies": {
+    "commander": "^2.6.0",
     "superagent": "^0.21.0"
   }
 }
