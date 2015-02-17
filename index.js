@@ -3,6 +3,7 @@
 var program = require('commander');
 var fs = require('fs');
 var request = require('superagent');
+var spreadsheet = require('edit-google-spreadsheet');
 
 var getVersionNumber = function() {
   return JSON.parse(fs.readFileSync('package.json')).version;
