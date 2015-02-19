@@ -9,7 +9,9 @@
   "author": "Philipp Küng <github@philippkueng.ch>",
   "license": "MIT",
   "dependencies": {
+    "async": "^0.9.0",
     "commander": "^2.6.0",
+    "edit-google-spreadsheet": "^0.2.16",
     "pg": "^4.2.0",
     "superagent": "^0.21.0"
   }
