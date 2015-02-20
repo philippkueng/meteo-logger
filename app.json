@@ -3,5 +3,10 @@
   "description": "A hosted script that logs Swiss weather data for a given station",
   "repository": "https://github.com/philippkueng/meteo-logger",
   "keywords": ["meteo", "switzerland", "save", "log", "weather"],
-  "addons": ["scheduler"]
+  "addons": ["scheduler"],
+  "env": {
+    "USERNAME": "username@google.com",
+    "PASSWORD": "password@goole.com",
+    "STATION": "BER"
+  }
 }
