@@ -1,0 +1,7 @@
+{
+  "name": "Meteo-Logger",
+  "description": "A hosted script that logs Swiss weather data for a given station",
+  "repository": "https://github.com/philippkueng/meteo-logger",
+  "keywords": ["meteo", "switzerland", "save", "log", "weather"],
+  "addons": ["scheduler"]
+}
