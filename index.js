@@ -18,6 +18,22 @@ var fetchMeteoData = function (stationCode, callback) {
     });
 };
 
+var convertToCsv = function(data, callback) {
+  async.reject(Object.keys(data), function (item, callback) {
+    if (item === 'station') {
+      callback(true);
+    } else {
+      callback(false);
+    }
+  }, function (results) {
+    async.mapSeries(results, function (item, callback) {
+      callback(null, data[item]);
+    }, function (err, results) {
+      callback(null, results);
+    });
+  });
+};
+
 var saveInSpreadsheet = function (data, callback) {
   async.waterfall([
       function (callback) {
@@ -42,7 +58,7 @@ var saveInSpreadsheet = function (data, callback) {
       // save in spreadsheet
       function (spreadsheet, info, callback) {
         var line = {};
-        line[info.nextRow] = [[1, 2, 3, 4]];
+        line[info.nextRow] = [data];
         spreadsheet.add(line);
         spreadsheet.send(function (err) {
           callback(err, 'done');
