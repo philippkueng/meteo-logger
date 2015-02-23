@@ -39,7 +39,7 @@ var saveInSpreadsheet = function (data, callback) {
       function (callback) {
         callback(null, {
           debug: true,
-          spreadsheetName: 'node-edit-spreadsheet',
+          spreadsheetName: process.env.FILENAME ? process.env.FILENAME : 'node-edit-spreadsheet',
           worksheetName: 'Sheet1',
           username: process.env.USERNAME,
           password: process.env.PASSWORD

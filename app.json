@@ -7,6 +7,7 @@
   "env": {
     "USERNAME": "username@google.com",
     "PASSWORD": "password@goole.com",
-    "STATION": "BER"
+    "STATION": "BER",
+    "FILENAME": "node-edit-spreadsheet"
   }
 }
